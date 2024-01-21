@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from .models import Phone
+from django.http import HttpResponse
+
 
 def index(request):
     return render(request, 'index.html')
@@ -13,12 +15,14 @@ def analyzes(request):
 def sport(request):
     return render(request, 'Sport.html')
 
+def save_phone(request):
+    return render(request, 'Save_phone.html')
 
 def save_phone(request):
     if request.method == 'POST':
         phone_number = request.POST['phone']
         phone = Phone(number=phone_number)
         phone.save()
-        return render(request, 'index.html')  # Отобразить страницу успешного сохранения
+        return render(request, 'Save_phone.html')  # Отобразить страницу успешного сохранения
     else:
-        return render(request, 'index.html')
+        return HttpResponse("Ошибка")

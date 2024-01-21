@@ -14,10 +14,10 @@
             <nav class="u-menu-1">
                <div class="u-nav-container">
                   <ul class=" u-spacing-30 u-nav-1">
-                     <li class="u-nav-item"><a href="index.html">Главная</a></li>
-                     <li class="u-nav-item"><a href="Massage.html">Массаж</a></li>
-                     <li class="u-nav-item"><a href="Sport.html">Спорт</a></li>
-                     <li class="u-nav-item"><a href="Analyzes.html">Анализы</a></li>
+                     <li class="u-nav-item"><a href="{% url 'index'%}">Главная</a></li>
+                     <li class="u-nav-item"><a href="{% url 'massage'%}">Массаж</a></li>
+                     <li class="u-nav-item"><a href="{% url 'sport'%}">Спорт</a></li>
+                     <li class="u-nav-item"><a href="{% url 'analyzes'%}">Анализы</a></li>
                   </ul>
                </div>
             </nav>
@@ -99,7 +99,7 @@
                      <img class="u-expanded-width u-image u-image-default u-image-1" src="{% static 'images/2024-01-0110.55.30.png' %}" data-image-width="1102" data-image-height="1176">
                      <h5 class="u-align-center u-text u-text-default u-text-3"> Спортивная медицина</h5>
                      <p class="u-align-center u-text u-text-4"> Специфической областью медицины является спортивная медицина. Ее основная цель - оценка готовности спортсменов к соревнованиям, а также оценка состояния их здоровья. </p>
-                     <a href="Sport.html" class="u-active-palette-1-light-2 u-align-left u-border-2 u-border-active-black u-border-hover-black u-border-white u-btn u-button-style u-hover-palette-1-light-2 u-text-active-black u-text-hover-black u-text-palette-1-base u-white u-btn-1">Подробнее</a>
+                     <a href="{% url 'sport'%}" class="u-active-palette-1-light-2 u-align-left u-border-2 u-border-active-black u-border-hover-black u-border-white u-btn u-button-style u-hover-palette-1-light-2 u-text-active-black u-text-hover-black u-text-palette-1-base u-white u-btn-1">Подробнее</a>
                   </div>
                </div>
                <div class="u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white">
@@ -107,7 +107,7 @@
                      <img class="u-expanded-width u-image u-image-default u-image-2" src="{% static 'images/2024-01-0110.54.57.png' %}" data-image-width="1102" data-image-height="1176">
                      <h5 class="u-align-center u-text u-text-default u-text-5"> Массаж</h5>
                      <p class="u-align-center u-text u-text-6"> Лечебный массаж полезен в период реабилитации. Он способствует быстрому восстановлению всех важных функций, а также улучшает самочувствие пациента.</p>
-                     <a href="Massage.html" class="u-active-palette-1-light-2 u-align-left u-border-2 u-border-active-black u-border-hover-black u-border-white u-btn u-button-style u-hover-palette-1-light-2 u-text-active-black u-text-hover-black u-text-palette-1-base u-white u-btn-2">Подробнее</a>
+                     <a href="{% url 'massage'%}" class="u-active-palette-1-light-2 u-align-left u-border-2 u-border-active-black u-border-hover-black u-border-white u-btn u-button-style u-hover-palette-1-light-2 u-text-active-black u-text-hover-black u-text-palette-1-base u-white u-btn-2">Подробнее</a>
                   </div>
                </div>
                <div class="u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white" data-animation-direction="Up" >
@@ -117,7 +117,7 @@
                      <p class="u-align-center u-text u-text-8"> Любая диагностика заболеваний всегда начинается со сдачи анализов. Результаты лабораторных анализов могут очень
                         многое рассказать о здоровье человека.
                      </p>
-                     <a href="Analyzes.html" class="u-active-palette-1-light-2 u-align-left u-border-2 u-border-active-black u-border-hover-black u-border-white u-btn u-button-style u-hover-palette-1-light-2 u-text-active-black u-text-hover-black u-text-palette-1-base u-white u-btn-3">Подробнее</a>
+                     <a href="{% url 'analyzes'%}" class="u-active-palette-1-light-2 u-align-left u-border-2 u-border-active-black u-border-hover-black u-border-white u-btn u-button-style u-hover-palette-1-light-2 u-text-active-black u-text-hover-black u-text-palette-1-base u-white u-btn-3">Подробнее</a>
                   </div>
                </div>
             </div>

@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, '/Users/anzelikagudkova/Desktop/config/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,6 +68,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
@@ -125,7 +126,7 @@ USE_TZ = True
 STATIC_URL = '/static/'  # Проверьте, что у вас указан правильный URL-префикс для статических файлов
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',  # Убедитесь, что у вас правильно указан путь к папке 'static'
+    'static'  # Убедитесь, что у вас правильно указан путь к папке 'static'
 ]
 
 # Default primary key field type
